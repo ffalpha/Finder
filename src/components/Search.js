@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDebounce } from 'use-debounce';
+import { Links } from './Links';
+
 function Search() {
     // const { setSearchTerm } = useStateContext();
     const [text, setText] = useState('Sri Lanka');
@@ -23,6 +25,7 @@ function Search() {
           x
         </button>
       )}
+        <Links />
         </div>
     )
 }
